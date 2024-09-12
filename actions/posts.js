@@ -21,7 +21,7 @@ export async function createPost(prevState, formData) {
 
   // upload image
   try {
-    // imageUrl = await uploadImage(image);
+    imageUrl = await uploadImage(image);
   } catch (error) {
     throw new Error("Image upload failed, post not stored.");
   }
